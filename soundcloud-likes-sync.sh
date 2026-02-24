@@ -10,7 +10,7 @@ mkdir -p "$OUTPUT_FOLDER/SoundCloud"
 cd "$OUTPUT_FOLDER/SoundCloud"
 
 yt-dlp \
-  --format "bestaudio/best" \
+  --format m4a \
   --extract-audio \
   --audio-quality 0 \
   --embed-metadata \
