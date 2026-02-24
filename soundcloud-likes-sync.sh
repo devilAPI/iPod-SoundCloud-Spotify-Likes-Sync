@@ -10,11 +10,12 @@ mkdir -p "$OUTPUT_FOLDER/SoundCloud"
 cd "$OUTPUT_FOLDER/SoundCloud"
 
 yt-dlp \
-  --format m4a \
+  --format "bestaudio/best" \
   --extract-audio \
   --audio-quality 0 \
   --embed-metadata \
   --embed-thumbnail \
+  --write-thumbnail \
   --convert-thumbnails jpg \
   --download-archive soundcloud_likes.archive \
   --ignore-errors \
